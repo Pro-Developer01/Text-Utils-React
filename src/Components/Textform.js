@@ -139,7 +139,7 @@ export default function Textform(props) {
       <button
         type="button"
         onClick={ChangeToUpp}
-        className="btn btn-primary mx-1"
+        className="btn btn-primary mx-1 my-1"
       >
         Convert To Uppercase
       </button>
