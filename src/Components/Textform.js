@@ -93,8 +93,8 @@ export default function Textform(props) {
 
   return (
       <>
-    <div className={`container d-${props.display}`}>
-      {console.log(props.display)}
+    <div className="container">
+     
       <div className="mb-3">
 
         <h1>{props.heading}</h1>
