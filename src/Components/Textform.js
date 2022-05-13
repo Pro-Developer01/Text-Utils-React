@@ -111,70 +111,70 @@ export default function Textform(props) {
       <button
         type="button"
         onClick={TextTospeech}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Text To Speech
       </button>
       <button
         type="button"
         onClick={extractnum}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Get Number
       </button>
       <button
         type="button"
         onClick={extractemail}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Get Email
       </button>
       <button
         type="button"
         onClick={Extraspaces}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Remove Extra Spaces
       </button>
       <button
         type="button"
         onClick={ChangeToUpp}
-        className="btn btn-primary mx-1 "
+        className="btn btn-primary mx-1 my-1 "
       >
         Convert To Uppercase
       </button>
       <button
         type="button"
         onClick={ChangeToLow}
-        className="btn btn-primary mx-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Convert To Lowercase
       </button>
       <button
         type="button"
         onClick={CapataliseFirstLetter}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Capatalise First Letter
       </button>
       <button
         type="button"
         onClick={Standardisation}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Standardisation
       </button>
       <button
         type="button"
         onClick={Cleartext}
-        className="btn btn-primary mx-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Delete 
       </button>
       <button
         type="button"
         onClick={copy}
-        className="btn btn-primary mx-1 my-2"
+        className="btn btn-primary mx-1 my-1"
         >
         Copy To Clipboard
       </button>
