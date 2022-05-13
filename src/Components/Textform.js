@@ -155,7 +155,7 @@ export default function Textform(props) {
         onClick={CapataliseFirstLetter}
         className="btn btn-primary mx-1 my-1"
         >
-        Capatalise First Letter
+        Capatalise First
       </button>
       <button
         type="button"
