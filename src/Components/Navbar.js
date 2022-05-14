@@ -36,7 +36,13 @@ export default function Navbar(props) {
                   About Us
                 </Link>
               </li>
+              <li className="nav-item">
+                <a className="nav-link active"  href="https://pro-developer01.github.io/SpotifyClone/" target="_blank" rel="noopener noreferrer">
+                  Other Projects
+                </a>
+              </li>
             </ul>
+
 
             <form className="d-flex">
               <input

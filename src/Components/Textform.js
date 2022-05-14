@@ -97,7 +97,7 @@ export default function Textform(props) {
      
       <div className="mb-3">
 
-        <h1>{props.heading}</h1>
+        <h3 className="mb-2" style={{color: props.mode==='light'?'black':'white'}}>{props.heading}</h3>
         <textarea
           className="form-control"
           id="exampleFormControlTextarea1"
@@ -109,6 +109,7 @@ export default function Textform(props) {
         ></textarea>      
       </div>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={TextTospeech}
         className="btn btn-primary mx-1 my-1"
@@ -116,6 +117,7 @@ export default function Textform(props) {
         Text To Speech
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={extractnum}
         className="btn btn-primary mx-1 my-1"
@@ -123,6 +125,7 @@ export default function Textform(props) {
         Get Number
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={extractemail}
         className="btn btn-primary mx-1 my-1"
@@ -130,6 +133,7 @@ export default function Textform(props) {
         Get Email
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={Extraspaces}
         className="btn btn-primary mx-1 my-1"
@@ -137,6 +141,7 @@ export default function Textform(props) {
         Remove Extra Spaces
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={ChangeToUpp}
         className="btn btn-primary mx-1 my-1 "
@@ -144,6 +149,7 @@ export default function Textform(props) {
         Convert To Uppercase
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={ChangeToLow}
         className="btn btn-primary mx-1 my-1"
@@ -151,6 +157,7 @@ export default function Textform(props) {
         Convert To Lowercase
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={CapataliseFirstLetter}
         className="btn btn-primary mx-1 my-1"
@@ -158,13 +165,16 @@ export default function Textform(props) {
         Capatalise First Letter
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={Standardisation}
         className="btn btn-primary mx-1 my-1"
         >
         Standardisation
+        
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={Cleartext}
         className="btn btn-primary mx-1 my-1"
@@ -172,6 +182,7 @@ export default function Textform(props) {
         Delete 
       </button>
       <button
+      disabled={text.length===0}
         type="button"
         onClick={copy}
         className="btn btn-primary mx-1 my-1"

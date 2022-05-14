@@ -9,8 +9,8 @@ import {
   BrowserRouter as Router,
   Routes ,
   Route,
-  
 } from "react-router-dom";
+import Footer from './Components/Footer';
 
 function App() {
   const [Mode, setMode] = useState("light");
@@ -57,12 +57,13 @@ function App() {
     <Routes >
           <Route exact path="/about" element={<About mode={Mode}/>}>
           </Route>
-           <Route exact path='/' element={<Textform mode={Mode}  Notification={Notification}/>} >
+           <Route exact path='/' element={<Textform mode={Mode} heading="Enter Text Below" Notification={Notification}/>} >
           </Route>
         </Routes>
         </Router>
-
+        <Footer mode={Mode}/>
     </>
+
     
   );
 }
