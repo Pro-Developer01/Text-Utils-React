@@ -40,7 +40,7 @@ export default function Footer(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fa-brands fa-github fa-lg mx-3"></i>
+            <i className="fa-brands fa-github fa-lg mx-3"></i>
           </a>
         </div>
         <center>

@@ -23,10 +23,10 @@ export default function DarkModeToggle(props) {
         </label>
       </div>
       <div className="dark_mode_pellet">
-        <button className="green_btn" onClick={props.togglemode_green}></button>
-        <button className="blue_btn" onClick={props.togglemode_blue}></button>
-        <button className="red_btn" onClick={props.togglemode_red}></button>
-        <button className="yellow_btn" onClick={props.togglemode_yellow}></button>
+        <button className="green_btn bg-success" onClick={props.togglemode_green}></button>
+        <button className="red_btn bg-danger" onClick={props.togglemode_red}></button>
+        <button className="blue_btn bg-info" onClick={props.togglemode_blue}></button>
+        <button className="yellow_btn bg-warning" onClick={props.togglemode_yellow}></button>
       </div>
     </div>
           </div>

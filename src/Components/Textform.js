@@ -193,9 +193,9 @@ export default function Textform(props) {
     </div>
     <div className="container my-3" style={{color: props.mode==='light'?'black':'white'}}>
       <h2>Word <em>&</em> Character</h2>
-      <p><b>{text.split(' ').filter((element)=>{return element.length!==0}).length}</b> Words and <b>{text.length}</b> Characters</p>
+      <p><b>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length}</b> Words and <b>{text.length}</b> Characters</p>
       <h2>Reading Time</h2>
-      <p><b>{0.008*text.split(' ').filter((element)=>{return element.length!==0}).length}</b> Minutes required to read this text</p>
+      <p><b>{0.008*text.split(/\s+/).filter((element)=>{return element.length!==0}).length}</b> Minutes required to read this text</p>
       <h2>Preview</h2>
       <p>{text.length>0?text:"Please Enter Something In Text Box To Get Preview"}</p>
     </div>
