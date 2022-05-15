@@ -36,12 +36,14 @@ function App() {
     if(Mode==='light')
     {
       setMode('dark');
+      setpellet('primary');
       document.body.style.background=" #042743"
       Notification("Dark Mode is Enabled","success");
       document.title="Text Utils - Dark Mode";
     }
     else{
       setMode('light');
+      setpellet('primary');
       document.body.style.background="white"
       Notification("Light Mode is Enabled","success");
       document.title="Text Utils - Light Mode";

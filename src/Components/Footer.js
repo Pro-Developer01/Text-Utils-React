@@ -35,6 +35,13 @@ export default function Footer(props) {
           >
             <i className="fa-solid fa-envelope fa-lg mx-3"></i>
           </a>
+          <a
+            href="https://github.com/Pro-Developer01"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github fa-lg mx-3"></i>
+          </a>
         </div>
         <center>
         <p className="copyright" style={{color: props.mode==='light'?'rgb(88, 87, 87)':'#c3bebe'}}>Copyright &copy; 2022 - shashank Yadav </p>
