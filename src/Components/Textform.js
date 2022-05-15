@@ -56,7 +56,7 @@ export default function Textform(props) {
 
   var CapataliseFirstLetter=()=>
   {
-    var arr=text.split(" ");
+    var arr=text.split(/\s+/);
     for(var i=0; i<arr.length; i++)
     {
       arr[i]=arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
@@ -65,15 +65,16 @@ export default function Textform(props) {
     var newtext=arr.join(" ");
     SetText(newtext);
     props.Notification("Capatalised The First Letter Successfully", "success");
+    
   }
 
-  var Standardisation=()=>
-  {
-    var str1=text.charAt(0).toUpperCase()+text.slice(1);
-    SetText(str1);
-    props.Notification("Standardised Successfully", "success");
+  // var Standardisation=()=>
+  // {
+  //   var str1=text.charAt(0).toUpperCase()+text.slice(1);
+  //   SetText(str1);
+  //   props.Notification("Standardised Successfully", "success");
 
-  }
+  // }
 
   var copy=()=>
   {
@@ -162,9 +163,9 @@ export default function Textform(props) {
         onClick={CapataliseFirstLetter}
         className={`btn btn-${props.pellet} mx-1 my-1`}
         >
-        Capatalise First Letter
+        Capitalise First Letter
       </button>
-      <button
+      {/* <button
       disabled={text.length===0}
         type="button"
         onClick={Standardisation}
@@ -172,7 +173,7 @@ export default function Textform(props) {
         >
         Standardisation
         
-      </button>
+      </button> */}
       <button
       disabled={text.length===0}
         type="button"
